@@ -1,0 +1,230 @@
+body {
+    background-image: linear-gradient(to right, skyblue, violet);
+    height: 100vh;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-container {
+    text-align: center;
+    width: 100%;
+}
+
+.search-input {
+    font-size: 16px;
+    padding: 5px;
+
+}
+
+.viewbutton,
+.search-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.viewbutton:hover,
+.search-btn:hover {
+    background-color: rgb(23, 194, 216);
+}
+
+.product-table {
+    width: 80%;
+    margin: 50px auto;
+    font-size: 16px;
+    border-radius: 5px;
+
+
+}
+
+.product-table th,
+.product-table td {
+    padding: 10px;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+.product-table th {
+    background-color: whitesmoke;
+    font-weight: bold;
+
+}
+
+.product-table tbody {
+    background-color: #f9f9f9;
+}
+
+.product-table tbody tr:hover {
+    background-color: #eee0f5;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    font-style: bold;
+    border-radius: 8px;
+}
+
+.modal-content label {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.modal-content input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.close,
+.close-btn {
+    position: relative;
+    bottom: 10px;
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close-btn:hover,
+.close:focus,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#categorySelect {
+    padding: 10px;
+    font-size: 16px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.edit-btn {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: hsl(195, 53%, 59%);
+    border: none;
+    color: white;
+}
+.delete-btn{
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: hsl(195, 53%, 59%);
+    border: none;
+    color: white;
+
+}
+.view-btn{
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: hsl(195, 53%, 59%);
+    border: none;
+    color: white;
+}
+#newQuantity {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.back-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.backbutton {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-style: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+
+.backbutton:hover {
+    background-color: rgb(23, 194, 216);
+    transform: translateY(-3px);
+}
+
+#sortButtonContainer {
+    text-align: right;
+    margin-right: 480px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.sortbutton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sortbutton:hover {
+    background-color: #218838;
+}
+
+.sortbutton:active {
+    background-color: #1e7e34;
+}

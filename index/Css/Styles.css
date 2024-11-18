@@ -1,0 +1,65 @@
+body {
+
+    background-image: url("../im.jpg");
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image on the page */
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    color: floralwhite;
+    position: relative;
+    top:150px; 
+    
+}
+
+.button-wrapper {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 10px;
+    height: 350px;
+    max-width: 400px; /* Limits the size of the container */
+    margin: 20px auto; /* Centers the container horizontally */
+    text-align: center; /* Aligns buttons in the middle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+
+}
+.button-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.button-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-button {
+    width: 200px; /* Fixed width */
+    height: 50px;
+    padding: 10px 10px;
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #fad3c8;
+}

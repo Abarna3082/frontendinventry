@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/viewstyle.css">
+</head>
+
+<body>
+    <!-- <div class="search-container">
+        <input type="text" class="search-input" placeholder="Enter product id">
+        <button class="search-btn">Search Product</button> -->
+    <!-- </div> -->
+    <div class="back-button-container">
+        <button class="backbutton" onclick="goBack()">Back</button>
+    </div>
+
+    <table id="productTable" class="product-table">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Edit</th>
+                <th>Delete</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <label for="newQuantity">Enter Quantity To Add:</label>
+            <input type="number" id="newQuantity" min="0">
+            <button id="save-btn">Save</button>
+        </div>
+    </div>
+
+    <script src="../JavaScript/updatefunc.js"></script>
+</body>
+
+</html>

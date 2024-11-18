@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product - Leaves Theme</title>
+    <link rel="stylesheet" href="../Css/addproductstyle.css">
+</head>
+
+<body>
+    <form id="addProductForm">
+        <h2>Add Product</h2>
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required>
+
+        <!-- <label for="categoryType">Category Type:</label>
+        <input type="text" id="categoryType" name="categoryType" required> -->
+        <label for="categoryType">Category Type:</label>
+<select id="categoryType" name="categoryType" required>
+    <option value="" disabled selected></option>
+    <option value="electronics">Electronics</option>
+    <option value="electronics">Furniture</option>
+    <option value="electronics">Appliances</option>
+</select>
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" required>
+
+        <button type="button" onclick="submitForm()">Add Product</button>
+        <button type="button" onclick="goBack()">Go back</button>
+    </form>
+
+    <div id="responseMessage" style="display:none;">
+        <h2>Product added successfully!</h2>
+        <p>Would you like to add another product?</p>
+        <button onclick="addAnotherProduct()">Add Product</button>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script src="../JavaScript/addfunc.js"></script>
+</body>
+
+</html>

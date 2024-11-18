@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Products</title>
+    <link rel="stylesheet" href="../Css/viewstyle.css">
+</head>
+
+<body>
+    <div class="button-container">
+        <button class="viewbutton" onclick="openProductIdModal()">View Product By Id</button>
+        <button class="viewbutton" onclick="displayAllProducts()">View All Products</button>
+        <button class="viewbutton" onclick="openCategoryModal()">View Product By Category Type</button>
+
+    </div>
+    <div class="back-button-container">
+        <button class="backbutton" onclick="goBack()">Back</button>
+    </div>
+
+    <div id="sortButtonContainer" style="display:none;">
+        <button class="sortbutton" onclick="sortProducts()">Sort By Price</button>
+    </div>
+
+    <table id="productTable" class="product-table" style="display:none;">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>View</th>
+            </tr>
+        </thead>
+        <tbody class="tablebody">
+
+        </tbody>
+    </table>
+
+    <div id="productIdModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProductIdModal()">&times;</span>
+            <label for="productIdInput">Enter Product ID:</label>
+            <input type="text" id="productIdInput">
+            <button onclick="viewProductById()">Submit</button>
+        </div>
+    </div>
+
+    <div id="categoryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCategoryModal()">&times;</span>
+            <label for="categorySelect">Select Product Category:</label>
+            <select id="categorySelect">
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Appliances</option>
+                <option value="furniture">Furniture</option>
+            </select>
+            <button onclick="viewByCategory()">Submit</button>
+        </div>
+    </div>
+
+    <div id="deleteCategoryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDeleteCategoryModal()">&times;</span>
+            <label for="categoryIdInput">Enter Category ID to Delete:</label>
+            <input type="text" id="categoryIdInput" placeholder="Category ID">
+            <button onclick="deleteByCategory()">Delete </button>
+        </div>
+    </div>
+
+    <div id="EditIdModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEdit()">&times;</span>
+            <label for="editProductIdInput">Product ID:</label>
+            <input type="text" id="editProductIdInput" placeholder="Enter Product ID" required>
+
+            <button onclick="submitEditProduct()">Submit</button>
+        </div>
+    </div>
+
+
+    <script src="../JavaScript/viewfunc.js"></script>
+</body>
+
+</html>

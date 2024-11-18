@@ -1,0 +1,71 @@
+body {
+  background-image: url("../at.jpg");
+  background-repeat: no-repeat; /* Prevents repetition of the image */
+  background-size: cover; /* Ensures the image covers the whole viewport */
+  background-position: center; /* Centers the image */
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  }
+
+  .container {
+    background:rgb(49, 45, 45);
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  h2 {
+    text-align: center;
+    color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .link {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+  }
+  .imge{
+    height: 50%;
+    width: 50%;
+
+  }
+  .tag,.tags{
+    color: aqua;
+  }
+  .tag:hover, .tags:hover {
+    color:blanchedalmond
+  }
