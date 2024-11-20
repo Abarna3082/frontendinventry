@@ -1,10 +1,10 @@
 
 async function submitForm() {
+    const token = localStorage.getItem("token")
     if (!document.getElementById("addProductForm").checkValidity()) {
         alert("Please fill out all required fields.");
         return;
     }
-
     const formData = {
         productName: document.getElementById("productName").value,
         price: parseFloat(document.getElementById("price").value),
@@ -14,16 +14,16 @@ async function submitForm() {
             brand: document.getElementById("brand").value
         }
     };
-
+    console.log(`Bearer ${token}`)
     try {
         const response = await fetch("http://localhost:8080/inventry/addProduct", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                'Authorization': `Bearer ${token}`,
             },
             body: JSON.stringify(formData)
         });
-
         if (!response.ok) {
             const errorData = await response.text();
             console.error("Server error response:", errorData);

@@ -155,7 +155,8 @@ body {
     border: none;
     color: white;
 }
-.delete-btn{
+
+.delete-btn {
     font-size: 16px;
     padding: 5px 10px;
     background-color: hsl(195, 53%, 59%);
@@ -163,13 +164,15 @@ body {
     color: white;
 
 }
-.view-btn{
+
+.view-btn {
     font-size: 16px;
     padding: 5px 10px;
     background-color: hsl(195, 53%, 59%);
     border: none;
     color: white;
 }
+
 #newQuantity {
     padding: 5px;
     font-size: 16px;

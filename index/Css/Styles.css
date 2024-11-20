@@ -1,9 +1,9 @@
 body {
 
     background-image: url("../im.jpg");
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image on the page */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -11,21 +11,22 @@ h1 {
     text-align: center;
     color: floralwhite;
     position: relative;
-    top:150px; 
-    
+    top: 150px;
+
 }
 
 .button-wrapper {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
     height: 350px;
-    max-width: 400px; /* Limits the size of the container */
-    margin: 20px auto; /* Centers the container horizontally */
-    text-align: center; /* Aligns buttons in the middle */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
+
 .button-overlay {
     position: absolute;
     top: 30%;
@@ -39,14 +40,14 @@ h1 {
 }
 
 .button-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
 
 .product-button {
-    width: 200px; /* Fixed width */
+    width: 200px;
     height: 50px;
     padding: 10px 10px;
     font-size: 18px;
